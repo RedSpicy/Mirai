@@ -41,6 +41,8 @@ public class ClickToShowUI : MonoBehaviour
                 if (hit.transform == transform && uiPanel != null)
                 {
                     uiPanel.SetActive(!uiPanel.activeSelf);
+                    targetObject.GetComponent
+
                 }
             }
         }
