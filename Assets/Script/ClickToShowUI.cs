@@ -12,7 +12,7 @@ public class ClickToShowUI : MonoBehaviour
         // シーン内で特定のUIオブジェクトを検索して設定
         if (uiPanel == null)
         {
-            uiPanel = GameObject.Find("ui");
+            uiPanel = GameObject.Find("Ui");
             Debug.Log("UIPanel が見つかりました。");
             uiPanel.GetComponent<CanvasGroup>().alpha = 1;
         }
@@ -40,8 +40,9 @@ public class ClickToShowUI : MonoBehaviour
             {
                 if (hit.transform == transform && uiPanel != null)
                 {
+
                     uiPanel.SetActive(!uiPanel.activeSelf);
-                    //targetObject.GetComponent;
+                    //targetObject.GetComponent
 
                 }
             }

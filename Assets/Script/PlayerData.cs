@@ -37,7 +37,7 @@ public class PlayerData : MonoBehaviour
     public void AddMoney(int amount)
     {
         nMoney += amount;
-       
+
     }
 
     public void AddScore(int amount)

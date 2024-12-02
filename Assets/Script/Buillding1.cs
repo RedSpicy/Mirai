@@ -3,16 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Billding1 : MonoBehaviour
+public class Buillding1 : MonoBehaviour
 {
     public GameObject buildingPrefab;       // 建設する建物のPrefab
     private bool isConstructed = false;     // 建物が建設済みかどうか
     private int Score = PlayerData.Instance.nScore;
 
+    private GameObject ManageData;
+    private BuilldingData builldingData;
 
     void Start()
     {
-
+        ManageData = GameObject.Find("ManageData");
+        builldingData = ManageData.GetComponent<BuilldingData>();
     }
 
     void Update()
@@ -30,9 +33,9 @@ public class Billding1 : MonoBehaviour
         if (buildingPrefab != null)
         {
             // 現在の空き地の位置に建物を設置
+            builldingData.AddBuillding();
             Instantiate(buildingPrefab, transform.position, Quaternion.identity);
 
-            Debug.Log("!!!!!");
             // 空き地のGameObjectを削除
             Destroy(gameObject);
 
