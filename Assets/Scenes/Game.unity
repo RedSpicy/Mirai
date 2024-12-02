@@ -1013,8 +1013,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   investButton: {fileID: 86413239}
   specialButton: {fileID: 1651818930}
-  targetObject: {fileID: 4226996010592851204, guid: bec4b9c05dc39ce46a2288dcf69787f4, type: 3}
-  scaleIncrease: {x: 1, y: 1, z: 1}
 --- !u!225 &407871424
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -1239,7 +1237,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4226996010592851204, guid: bec4b9c05dc39ce46a2288dcf69787f4, type: 3}
-  scaleIncrease: {x: 1, y: 1, z: 1}
+  BuilldingPrefabList: []
+  scaleIncrease: {x: 0.5, y: 0.5, z: 0.5}
+  selectedModel: {fileID: 0}
+  IsScale: 0
 --- !u!1 &528892560
 GameObject:
   m_ObjectHideFlags: 0

@@ -33,8 +33,9 @@ public class Buillding1 : MonoBehaviour
         if (buildingPrefab != null)
         {
             // 現在の空き地の位置に建物を設置
-            builldingData.AddBuillding();
             Instantiate(buildingPrefab, transform.position, Quaternion.identity);
+            // リストに登録
+            builldingData.AddBuillding();
 
             // 空き地のGameObjectを削除
             Destroy(gameObject);

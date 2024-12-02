@@ -9,6 +9,16 @@ public class Buillding2 : MonoBehaviour
     private bool isConstructed = false;     // 建物が建設済みかどうか
     private int Score = PlayerData.Instance.nScore;
 
+    private GameObject ManageData;
+    private BuilldingData builldingData;
+
+    void Start()
+    {
+        ManageData = GameObject.Find("ManageData");
+        builldingData = ManageData.GetComponent<BuilldingData>();
+    }
+
+
     private void Update()
     {
         // scoreが一定に達した場合
@@ -23,6 +33,7 @@ public class Buillding2 : MonoBehaviour
         if (buildingPrefab != null)
         {
             // 現在の空き地の位置に建物を設置
+            builldingData.AddBuillding();
             Instantiate(buildingPrefab, transform.position, Quaternion.identity);
 
             // 空き地のGameObjectを削除

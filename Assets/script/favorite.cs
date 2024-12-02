@@ -35,7 +35,7 @@ public class favorite : MonoBehaviour
 
         obj = transform.root.gameObject;
 
-        Debug.Log(obj.GetComponent<human>().GetFavoriteFood());
+        //Debug.Log(obj.GetComponent<human>().GetFavoriteFood());
         switch (obj.GetComponent<human>().GetFavoriteFood())
         {
             case Store.food_type.uirou:
@@ -64,6 +64,6 @@ public class favorite : MonoBehaviour
         // テクスチャの変更
         material.SetTexture("_MainTex", BrainwashingTex);
 
-        Debug.Log("tanomu~");
+        //Debug.Log("tanomu~");
     }
 }
