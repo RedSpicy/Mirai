@@ -2303,8 +2303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6224008e6c736cc498f63748859db321, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Kanban00_Left: {fileID: 7667441942462077705, guid: a8f3f71a97e54924784a4736a453e71d, type: 3}
-  Kanban00_Right: {fileID: 1402807441815937715, guid: bc03e23996f5fd84494b6fda009cf43e, type: 3}
+  Kanban00_Left: {fileID: 413391644878036438, guid: d9be768ccdd241d40b1834de8091b4f7, type: 3}
+  Kanban00_Right: {fileID: 820862843137736442, guid: 6ceb2949c04d66843ae5e270fa59c6aa, type: 3}
   Kanban00_Preview: {fileID: 8365931387087758774, guid: 4965132a97b036643a479dc9ac129239, type: 3}
   Kanban01_Left: {fileID: 1899675622135577362, guid: 50e8f694a4473ad4d84573953ac11e99, type: 3}
   Kanban01_Right: {fileID: 1441951835695525383, guid: adf7c12666fa17441897698f410cf6b5, type: 3}
@@ -3883,7 +3883,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 109.099, y: -90.035, z: 28.442001}
 --- !u!4 &1812464670 stripped
 Transform:
@@ -4162,7 +4162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4188848960863314074, guid: e0b1d3c4a63b269438ad6e2ea06bf263, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4188848960863314074, guid: e0b1d3c4a63b269438ad6e2ea06bf263, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4219,7 +4219,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &4909250345228411704
 MeshFilter:
@@ -4316,7 +4316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5626162829602172317, guid: eb5c3b0cb8e71804d8d7abc3fcd5b761, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5626162829602172317, guid: eb5c3b0cb8e71804d8d7abc3fcd5b761, type: 3}
       propertyPath: m_LocalPosition.x
