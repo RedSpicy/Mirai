@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class PlayerData : MonoBehaviour
 {
@@ -37,6 +38,13 @@ public class PlayerData : MonoBehaviour
     {
         nTime+=0.1f;
 
+
+        // デバッグ用
+        // スペースキーが押されたらスコアを増やす
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            nScore += 200; // スコアを100増やす
+        }
 
         if (bAppear)
         {
