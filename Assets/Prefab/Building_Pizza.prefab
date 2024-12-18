@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 4188848960863314077}
   m_Layer: 0
   m_Name: Building_Pizza
-  m_TagString: EnemyStore
+  m_TagString: rival
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

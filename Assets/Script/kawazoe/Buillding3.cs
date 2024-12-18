@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class Billding3 : MonoBehaviour
+public class Buillding3 : MonoBehaviour
 {
     public GameObject buildingPrefab;       // Œšİ‚·‚éŒš•¨‚ÌPrefab
     private bool isConstructed = false;     // Œš•¨‚ªŒšİÏ‚İ‚©‚Ç‚¤‚©

@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 5626162829600272253}
   - component: {fileID: 5626162829599305122}
   - component: {fileID: 5626162829599305123}
+  - component: {fileID: -898956040529358506}
   m_Layer: 0
   m_Name: Building_Gift Shop
-  m_TagString: Store
+  m_TagString: NagoyaMeshi
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,3 +112,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11.218784, y: 6.499003, z: 10.571994}
   m_Center: {x: -0.00001859665, y: 3.2495005, z: 0.3619852}
+--- !u!114 &-898956040529358506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5626162829602468285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29c6ebbff2f9ece47b2fac73862065bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiPanel: {fileID: 0}

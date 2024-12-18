@@ -13,6 +13,8 @@ TagManager:
   - Store
   - Grand
   - EnemyStore
+  - NagoyaMeshi
+  - rival
   layers:
   - Default
   - TransparentFX

@@ -1,11 +1,12 @@
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class CircularDottedLine : MonoBehaviour
 {
     public int segments = 50;       // 円を構成する点の数
     public float radius = 5f;       // 円の半径
     public float gapSize = 0.3f;    // 点線の間隔（割合で指定）
-    public Color lineColor = Color.blue; // 点線の色
+    public Color lineColor; // 点線の色
     public float lineWidth = 0.5f;  // 線の太さ
 
     private LineRenderer lineRenderer;
@@ -20,6 +21,26 @@ public class CircularDottedLine : MonoBehaviour
         lineRenderer.startWidth = lineWidth;
         lineRenderer.endWidth = lineWidth;
         lineRenderer.loop = true;
+
+        // 親オブジェクトが持つタグに基づいて色を変更する
+        if (transform.parent != null)
+        {
+            // 親オブジェクトのタグが"HousePrefab"か確認
+            if (transform.parent.CompareTag("NagoyaMeshi"))
+            {
+                // 親オブジェクトが"HousePrefab"タグの場合、色を青に変更
+                lineColor = Color.blue;
+                ChangeLineColor(Color.blue);
+                Debug.Log("ao");
+            }
+            else
+            {
+                // その他の場合、色を赤に変更
+                lineColor = Color.red;
+                ChangeLineColor(Color.red);
+                Debug.Log("aka");
+            }
+        }
 
         // マテリアルを適用（透過対応）
         Material material = new Material(Shader.Find("Sprites/Default"));
@@ -68,5 +89,15 @@ public class CircularDottedLine : MonoBehaviour
         // グラデーションを設定
         gradient.SetKeys(colorKey, alphaKey);
         lineRenderer.colorGradient = gradient;
+    }
+
+    // LineRendererの色を変更するメソッド
+    void ChangeLineColor(Color color)
+    {
+        if (lineRenderer != null)
+        {
+            lineRenderer.startColor = color;  // 始点の色
+            lineRenderer.endColor = color;    // 終点の色
+        }
     }
 }
