@@ -26,7 +26,7 @@ public class CircularDottedLine : MonoBehaviour
         if (transform.parent != null)
         {
             // 親オブジェクトのタグが"HousePrefab"か確認
-            if (transform.parent.CompareTag("NagoyaMeshi"))
+            if (transform.parent.CompareTag("Store"))
             {
                 // 親オブジェクトが"HousePrefab"タグの場合、色を青に変更
                 lineColor = Color.blue;
@@ -86,9 +86,9 @@ public class CircularDottedLine : MonoBehaviour
             alphaKey[i] = new GradientAlphaKey((t % gapSize) < (gapSize / 2) ? 1f : 0f, t);
         }
 
-        // グラデーションを設定
-        gradient.SetKeys(colorKey, alphaKey);
-        lineRenderer.colorGradient = gradient;
+        //// グラデーションを設定
+        //gradient.SetKeys(colorKey, alphaKey);
+        //lineRenderer.colorGradient = gradient;
     }
 
     // LineRendererの色を変更するメソッド
