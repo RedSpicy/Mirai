@@ -706,7 +706,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643978737631946563, guid: 06079cae3321da34ea2799523a5ba00b, type: 3}
       propertyPath: cooltime
-      value: 300
+      value: 1000
       objectReference: {fileID: 0}
     - target: {fileID: 4643978737631946589, guid: 06079cae3321da34ea2799523a5ba00b, type: 3}
       propertyPath: m_Enabled
@@ -2318,7 +2318,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4643978737631946563, guid: 06079cae3321da34ea2799523a5ba00b, type: 3}
       propertyPath: cooltime
-      value: 300
+      value: 1100
       objectReference: {fileID: 0}
     - target: {fileID: 4643978737631946591, guid: 06079cae3321da34ea2799523a5ba00b, type: 3}
       propertyPath: m_RootOrder
@@ -2514,7 +2514,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
   m_sharedMaterial: {fileID: 8662524528401918421, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
@@ -2619,7 +2619,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &142755163
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3323,7 +3323,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 500
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
   m_sharedMaterial: {fileID: 8662524528401918421, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
@@ -3795,7 +3795,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 300
+      value: 1500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
@@ -10613,7 +10613,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 1000
+      value: 1400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
@@ -11404,7 +11404,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 300
+  m_text: 200
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
   m_sharedMaterial: {fileID: 8662524528401918421, guid: 2536714160a2a384395d95b2e9c7ad19, type: 2}
@@ -23622,7 +23622,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 1000
+      value: 1300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
@@ -25330,7 +25330,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 1000
+      value: 1300
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
@@ -28937,7 +28937,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 1000
+      value: 1400
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
@@ -35434,7 +35434,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6977142835593128690, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}
       propertyPath: cooltime
-      value: 300
+      value: 1500
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 391368fa9a7413443b79dd27ba5c5a6b, type: 3}

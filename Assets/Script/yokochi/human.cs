@@ -271,15 +271,48 @@ public class human : MonoBehaviour
             { // 店に当たったら
                 state = (int)human_state.eat;       // 食事状態に遷移
                 Destroy(child);
+
+                // ゲーム内レベルによって加算の割合を変更したい
+                // レベル３
+                if (PlayerData.Instance.nCurrentStage == 2)
+                {
+                    // addMoneyValがどこでhumanから取得しているのかが分からない
+                    // addMoneyValがintなので、floatに変換させたい
+
+                    //addMoneyVal = addMoneyVal * 1.2f;
+                }
+                // レベル２
+                else if (PlayerData.Instance.nCurrentStage == 1)
+                {
+                    //addMoneyVal = addMoneyVal * 1.2f;
+                }
+                // レベル１はそのまま加算
+
                 script.AddMoney(addMoneyVal);       // お金加算
 
                 // 川添いじった
                 //script.AddScore(150);               // スコア加算
             }
-            // 目的でないお店へ案内されたら
+            // 目的でないお店へ案内されたら 1/2分のお金、スコア加算とする
             //else
             //{
-                // 1/2分のお金、スコア加算とする
+
+            // 先ずはaddMoneyValを1/2にしてから、ゲーム内レベルで割合を計算して最後に加算したい
+
+
+            // レベル３
+            //if (PlayerData.Instance.nCurrentStage == 2)
+            //{
+
+            //    //addMoneyVal = addMoneyVal * 1.2f;
+            //}
+            //// レベル２
+            //else if (PlayerData.Instance.nCurrentStage == 1)
+            //{
+            //    //addMoneyVal = addMoneyVal * 1.2f;
+            //}
+            // レベル１はそのまま加算
+
             //}
 
             if (other.gameObject.tag == "Store" && bCanStore == true)
@@ -295,7 +328,7 @@ public class human : MonoBehaviour
             { // 敵の店当たったら
                 state = (int)human_state.eat;       // 食事状態に遷移
                 addMoneyVal = (-addMoneyVal);
-                script.AddScore(addMoneyVal);      // スコア減算
+                script.AddMoney(addMoneyVal);      // money減算
 
                 Destroy(child);
             }
@@ -307,7 +340,7 @@ public class human : MonoBehaviour
             state = (int)human_state.eat;       // 食事状態に遷移
 
             addMoneyVal = (-addMoneyVal);
-            script.AddScore(addMoneyVal);      // スコア減算
+            script.AddMoney(addMoneyVal);      // スコア減算
 
             Destroy(child);
 
@@ -320,8 +353,7 @@ public class human : MonoBehaviour
             //Debug.Log("e store");
             script.AddMoney(addMoneyVal);       // お金加算
 
-            // 川添いじった
-            //script.AddScore(150);               // スコア加算
+            script.AddScore(150);               // スコア加算
 
 
             state = (int)human_state.eat;       // 食事状態に遷移

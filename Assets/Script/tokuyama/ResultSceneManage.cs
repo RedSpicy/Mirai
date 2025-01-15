@@ -176,9 +176,8 @@ public class ResultSceneManage : MonoBehaviour
                                         audioSource.PlayOneShot(CurrentShowSE);
                                         bShowCurrentScore = true;
                                     }
-                                    RandomNum = 1530;
-                                    //RandomNum = PlayerData.Instance.nScore;
-                                   // RandomNum = 7777;
+ 
+                                    RandomNum = PlayerData.Instance.nScore;
                                 }
 
                                 CurrentScoreText.text = ""+RandomNum;

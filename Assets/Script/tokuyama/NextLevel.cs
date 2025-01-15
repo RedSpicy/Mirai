@@ -61,7 +61,7 @@ public class NextLevel : MonoBehaviour
         //Scoreに応じてステージレベルが変化する処理
 
         // 川添プレゼンのためいったんコメントアウト
-        if (PlayerData.Instance.nCurrentStage == 0 && PlayerData.Instance.nScore >= 2000)       //元々は　Instance.nScore >= 1000
+        if (PlayerData.Instance.nCurrentStage == 0 && PlayerData.Instance.nScore >= 1000)
         {
             PlayerData.Instance.nCurrentStage = 1;
             PlayerData.Instance.bGameStart = false;
@@ -70,7 +70,7 @@ public class NextLevel : MonoBehaviour
             OriginCamRot=Cam.transform.localEulerAngles;
         }
 
-        if (PlayerData.Instance.nCurrentStage == 1 && PlayerData.Instance.nScore >= 5000)       //元々は　確かInstance.nScore >= 2000
+        if (PlayerData.Instance.nCurrentStage == 1 && PlayerData.Instance.nScore >= 2000)
         {
             PlayerData.Instance.nCurrentStage = 2;
             PlayerData.Instance.bGameStart = false;
@@ -116,7 +116,7 @@ public class NextLevel : MonoBehaviour
                 if(bBig==false)
                 {
                     nTime++;
-                    if(nTime>=120)
+                    if(nTime>=180)
                     {
                         bBig = true;
                         Range.transform.localScale = new Vector3(Range.transform.localScale.x * 6.0f, Range.transform.localScale.y * 6.0f, Range.transform.localScale.z * 6.0f);
@@ -129,7 +129,7 @@ public class NextLevel : MonoBehaviour
                 }
                 else
                 {
-                    if (nTime >= 120)
+                    if (nTime >= 180)
                     {
                         float perY = OriginScaleLv2.y / OriginScaleLv2.x;
                         float perZ = OriginScaleLv2.z / OriginScaleLv2.x;
@@ -140,7 +140,7 @@ public class NextLevel : MonoBehaviour
                         else
                         {
                             nTime++;
-                            if(nTime>=240)
+                            if(nTime>=360)
                             {
                                 Cam.transform.position = OriginCamPos;
                                 Cam.transform.localEulerAngles=OriginCamRot;
@@ -212,10 +212,10 @@ public class NextLevel : MonoBehaviour
                 if (bBig == false)
                 {
                     nTime++;
-                    if (nTime >= 120)
+                    if (nTime >= 180)
                     {
                         bBig = true;
-                        Range.transform.localScale = new Vector3(Range.transform.localScale.x * 2.5f, Range.transform.localScale.y * 2.5f, Range.transform.localScale.z * 2.5f);
+                        Range.transform.localScale = new Vector3(Range.transform.localScale.x * 1.5f, Range.transform.localScale.y * 1.5f, Range.transform.localScale.z * 1.5f);
                         Color color = PanelWhite.color;
                         color.a = 1.0f;
                         PanelWhite.color = color;
@@ -225,7 +225,7 @@ public class NextLevel : MonoBehaviour
                 }
                 else
                 {
-                    if (nTime >= 120)
+                    if (nTime >= 180)
                     {
                         float perY = OriginScaleLv2.y / OriginScaleLv2.x;
                         float perZ = OriginScaleLv2.z / OriginScaleLv2.x;
@@ -236,7 +236,7 @@ public class NextLevel : MonoBehaviour
                         else
                         {
                             nTime++;
-                            if (nTime >= 240)
+                            if (nTime >= 360)
                             {
                                 Cam.transform.position = OriginCamPos;
                                 Cam.transform.localEulerAngles = OriginCamRot;

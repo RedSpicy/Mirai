@@ -178,7 +178,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("InstallationLv2");
 
                             // Lv2看板購入
-                            playerData.AddMoney(-300);
+                            playerData.AddMoney(-200);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -198,7 +198,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("InstallationLv2");
 
                             // Lv2看板購入
-                            playerData.AddMoney(-300);
+                            playerData.AddMoney(-200);
                         }
 
                     }
@@ -221,7 +221,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("InstallationLv3");
 
                             // Lv3看板購入
-                            playerData.AddMoney(-1000);
+                            playerData.AddMoney(-500);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -241,7 +241,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("InstallationLv3");
 
                             // Lv3看板購入
-                            playerData.AddMoney(-1000);
+                            playerData.AddMoney(-500);
                         }
 
                     }
@@ -297,7 +297,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("Shatihoko");
 
                             // しゃちほこ購入
-                            playerData.AddMoney(-1000);
+                            playerData.AddMoney(-500);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -351,7 +351,7 @@ public class ManageGUI : MonoBehaviour
                             SoundManager.Instance.PlaySound("Shatihoko");
 
                             // しゃちほこ購入
-                            playerData.AddMoney(-1000);
+                            playerData.AddMoney(-500);
                         }
 
                     }
