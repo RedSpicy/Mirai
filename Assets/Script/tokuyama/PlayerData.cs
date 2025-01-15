@@ -43,6 +43,11 @@ public class PlayerData : MonoBehaviour
     {
         if (bGameStart)
         {
+            // ì“Y’Ç‰Á@‹àŠz‚ª0‚æ‚è‰º‚É‚È‚ç‚È‚¢‚æ‚¤‚É
+            if (nMoney < 0)
+            {
+                nMoney = 0;
+            }
 
             nTime += 0.1f;
             if (bAppear)
@@ -60,7 +65,7 @@ public class PlayerData : MonoBehaviour
 
             
             //ŠÔ‚ª—ˆ‚ÄResult‚ÌS•\¦
-            if (nTime >= 780)               //6ŠÔŒã
+            if (nTime >= 900)               //6ŠÔŒã
             {
                 bShowResult = true;
             }

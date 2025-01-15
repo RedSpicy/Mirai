@@ -720,7 +720,7 @@ MonoBehaviour:
   TebasakiTex: {fileID: 2800000, guid: 78fcb0ea1fc002342b2d65caafaca130, type: 3}
   TaiwanRamenTex: {fileID: 2800000, guid: eebcd919215f4c24fa4b9f4a5a02e5cb, type: 3}
   KishimenTex: {fileID: 2800000, guid: 177cfdda404d87d46bc205e3193e20be, type: 3}
-  BrainwashingTex: {fileID: 2800000, guid: 4eee2ed1c5b289b4cb022eb6f7ab2673, type: 3}
+  BrainwashingTex: {fileID: 2800000, guid: 917553efd7d791e42a583c198091d76e, type: 3}
 --- !u!1 &692192449222827517
 GameObject:
   m_ObjectHideFlags: 0
@@ -1637,7 +1637,7 @@ Transform:
   m_GameObject: {fileID: 1485781535459037459}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
   m_LocalPosition: {x: -6.162529, y: -0.063, z: 5.5450687}
-  m_LocalScale: {x: 2.5, y: 2.5, z: 2.5}
+  m_LocalScale: {x: 2.8, y: 2.8, z: 2.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1167791122337513122}

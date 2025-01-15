@@ -42,7 +42,6 @@ public class NextLevel : MonoBehaviour
     public GameObject Lv2;
     public GameObject Lv3;
     Vector3 OriginScaleLv2;
-    int test = 0;
     //Vector3 BigScaleLv2;
     // Start is called before the first frame update
     void Start()
@@ -62,11 +61,8 @@ public class NextLevel : MonoBehaviour
         //Scoreに応じてステージレベルが変化する処理
 
         // 川添プレゼンのためいったんコメントアウト
-        test++;
-        if (PlayerData.Instance.nCurrentStage == 0&&Input.GetMouseButtonDown(2) && test>=10)
-        //if (PlayerData.Instance.nCurrentStage == 0 && PlayerData.Instance.nScore >= 200)       //元々は　Instance.nScore >= 1000
+        if (PlayerData.Instance.nCurrentStage == 0 && PlayerData.Instance.nScore >= 2000)       //元々は　Instance.nScore >= 1000
         {
-            test = 0;
             PlayerData.Instance.nCurrentStage = 1;
             PlayerData.Instance.bGameStart = false;
             bLevel2 = true;
@@ -74,7 +70,7 @@ public class NextLevel : MonoBehaviour
             OriginCamRot=Cam.transform.localEulerAngles;
         }
 
-        if (PlayerData.Instance.nCurrentStage == 1 && PlayerData.Instance.nScore >= 1200)       //元々は　確かInstance.nScore >= 2000
+        if (PlayerData.Instance.nCurrentStage == 1 && PlayerData.Instance.nScore >= 5000)       //元々は　確かInstance.nScore >= 2000
         {
             PlayerData.Instance.nCurrentStage = 2;
             PlayerData.Instance.bGameStart = false;

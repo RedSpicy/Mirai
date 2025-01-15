@@ -28,9 +28,9 @@ public class CameraMove : MonoBehaviour
                     pos.x += val * moveVal;
 
                     // xç¿ïWÇ™-5ñ¢ñûÇ…Ç»ÇÁÇ»Ç¢ÇÊÇ§Ç…êßå¿
-                    if (pos.x < -20)
+                    if (pos.x < -8)
                     {
-                        pos.x = -20;
+                        pos.x = -8;
                     }
 
                     // xç¿ïWÇ™130à»è„Ç…Ç»ÇÁÇ»Ç¢ÇÊÇ§Ç…êßå¿

@@ -1,4 +1,3 @@
-using UnityEditor.PackageManager;
 using UnityEngine;
 using UnityEngine.UI;
 using static UnityEngine.GraphicsBuffer;
@@ -7,7 +6,6 @@ public class ScaleIncreaseButtonAlphaController : MonoBehaviour
 {
     public Button targetButton; // ëÄçÏÇµÇΩÇ¢É{É^Éì
     public StoreManager StoreObj;
-    private int currentValue = 0; // åªç›ÇÃíl
 
     StoreManager target;
 

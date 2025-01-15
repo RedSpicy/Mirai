@@ -219,11 +219,13 @@ MonoBehaviour:
   Select: 0
   Special1: {fileID: 21300000, guid: 0f4e2ecef3c399a47865db85defbfbb0, type: 3}
   Special2: {fileID: 21300000, guid: 42a8a79ec80c5d645a40e618577dfb9e, type: 3}
-  Special3: {fileID: 21300000, guid: 6260de4f9dc03484b8a3e0280c8cd98f, type: 3}
+  Special3: {fileID: 21300000, guid: 95c59e09812bf8343837494f46fab43d, type: 3}
   Special4: {fileID: 21300000, guid: 1527663a323a0a14ba527769b4b50c22, type: 3}
   Special5: {fileID: 21300000, guid: 6a0ee3db4e696b6489cee0e3fd95c24b, type: 3}
   rivalSpecial1: {fileID: 21300000, guid: 04de301ee3bf4504aa9a5ab2b441ce24, type: 3}
   rivalSpecial2: {fileID: 21300000, guid: 8c6ee40e4bc903c42b3149111234167e, type: 3}
+  rivalSpecial3: {fileID: 21300000, guid: 19429ca29fbe4e946aef3266513f91f4, type: 3}
+  rivalSpecial4: {fileID: 21300000, guid: 1e8fdc2318b5d9e49aac5052e790b7ce, type: 3}
   Hitsumabushi: {fileID: 21300000, guid: 959ba477ee903cd4cb90c5991f5aec05, type: 3}
   Kishimen: {fileID: 21300000, guid: 25a99ef0e6ced5b4a941e447d08a98b1, type: 3}
   Misokatsu: {fileID: 21300000, guid: 51da1462e1f44674696d995a21623fb1, type: 3}

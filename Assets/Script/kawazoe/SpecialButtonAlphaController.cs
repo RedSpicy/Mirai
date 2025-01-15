@@ -6,7 +6,6 @@ public class SpecialButtonAlphaController : MonoBehaviour
 {
     public Button targetButton; // ‘€ì‚µ‚½‚¢ƒ{ƒ^ƒ“
     public GameObject StoreObj;
-    private int currentValue = 0; // Œ»İ‚Ì’l
 
     Store target;
 

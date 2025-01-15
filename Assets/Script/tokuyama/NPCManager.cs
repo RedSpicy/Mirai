@@ -40,18 +40,44 @@ public class NPCManager : MonoBehaviour
                 float EndPos = Wall.transform.position.x - 2.0f;
 
 
-                if ((PlayerData.Instance.nTime >= 60.0f && PlayerData.Instance.nTime <= 120.0f) ||        //ƒ‚[ƒjƒ“ƒO
-                     (PlayerData.Instance.nTime >= 360.0f && PlayerData.Instance.nTime <= 420.0f) ||        //’‹
-                     (PlayerData.Instance.nTime >= 720.0f && PlayerData.Instance.nTime <= 780.0f))          //–é
+                if ((PlayerData.Instance.nTime >= 120.0f && PlayerData.Instance.nTime <= 240.0f) ||        //ƒ‚[ƒjƒ“ƒO
+                     (PlayerData.Instance.nTime >= 360.0f && PlayerData.Instance.nTime <= 480.0f) ||        //’‹
+                     (PlayerData.Instance.nTime >= 720.0f && PlayerData.Instance.nTime <= 900.0f))          //–é
                 {
-                    //nInterval = 30;
-
-                    // ì“Y’²®
-                    nInterval = 80;
+                    // ƒŒƒxƒ‹‚P
+                    if (PlayerData.Instance.nCurrentStage == 0)
+                    {
+                        nInterval = 80;
+                    }
+                    // ƒŒƒxƒ‹‚Q
+                    else if (PlayerData.Instance.nCurrentStage == 1)
+                    {
+                        nInterval = 60;
+                    }
+                    // ƒŒƒxƒ‹‚R
+                    else
+                    {
+                        nInterval = 40;
+                    }
+                       
                 }
                 else
                 {
-                    //nInterval = 60;
+                    // ƒŒƒxƒ‹‚P
+                    if (PlayerData.Instance.nCurrentStage == 0)
+                    {
+                        nInterval = 160;
+                    }
+                    // ƒŒƒxƒ‹‚Q
+                    else if (PlayerData.Instance.nCurrentStage == 1)
+                    {
+                        nInterval = 120;
+                    }
+                    // ƒŒƒxƒ‹‚R
+                    else
+                    {
+                        nInterval = 80;
+                    }
 
                     // ì“Y’²®
                     nInterval = 140;

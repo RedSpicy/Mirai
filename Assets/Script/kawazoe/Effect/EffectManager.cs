@@ -119,7 +119,7 @@ public class EffectManager : MonoBehaviour
     public GameObject SpawnShatihokoEffect1(Vector3 position)
     {
         GameObject fireEffect = shatihokoEffect1Pool.GetEffect(position, Quaternion.identity);
-        StartCoroutine(ReturnShatihokoEffect1AfterTime(fireEffect, 8f)); // 例: 3秒後にエフェクトをプールに戻す
+        StartCoroutine(ReturnShatihokoEffect1AfterTime(fireEffect, 4f)); // 例: 3秒後にエフェクトをプールに戻す
         return fireEffect;
     }
 
@@ -134,7 +134,7 @@ public class EffectManager : MonoBehaviour
     public GameObject SpawnShatihokoEffect2(Vector3 position)
     {
         GameObject fireEffect = shatihokoEffect2Pool.GetEffect(position, Quaternion.identity);
-        StartCoroutine(ReturnShatihokoEffect2AfterTime(fireEffect, 10f)); // 例: 3秒後にエフェクトをプールに戻す
+        StartCoroutine(ReturnShatihokoEffect2AfterTime(fireEffect, 6f)); // 例: 3秒後にエフェクトをプールに戻す
         return fireEffect;
     }
 
@@ -149,7 +149,7 @@ public class EffectManager : MonoBehaviour
     public GameObject SpawnShatihokoEffect3(Vector3 position)
     {
         GameObject fireEffect = shatihokoEffect3Pool.GetEffect(position, Quaternion.identity);
-        StartCoroutine(ReturnShatihokoEffect3AfterTime(fireEffect, 10f)); // 例: 3秒後にエフェクトをプールに戻す
+        StartCoroutine(ReturnShatihokoEffect3AfterTime(fireEffect, 6f)); // 例: 3秒後にエフェクトをプールに戻す
         return fireEffect;
     }
 
@@ -164,7 +164,7 @@ public class EffectManager : MonoBehaviour
     public GameObject SpawnShatihokoEffect4(Vector3 position)
     {
         GameObject fireEffect = shatihokoEffect4Pool.GetEffect(position, Quaternion.identity);
-        StartCoroutine(ReturnShatihokoEffect4AfterTime(fireEffect, 8f)); // 例: 3秒後にエフェクトをプールに戻す
+        StartCoroutine(ReturnShatihokoEffect4AfterTime(fireEffect, 4f)); // 例: 3秒後にエフェクトをプールに戻す
         return fireEffect;
     }
 

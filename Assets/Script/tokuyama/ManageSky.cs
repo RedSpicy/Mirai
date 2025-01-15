@@ -32,8 +32,6 @@ public class ManageSky : MonoBehaviour
     public GameObject PointLight12;
     public GameObject PointLight13;
     public GameObject PointLight14;
-    public GameObject PointLight15;
-    public GameObject PointLight16;
 
     private float ColorSpeed = 0.004f;
 
@@ -59,8 +57,6 @@ public class ManageSky : MonoBehaviour
      PointLight12.SetActive(false);
      PointLight13.SetActive(false);
      PointLight14.SetActive(false);
-     PointLight15.SetActive(false);
-     PointLight16.SetActive(false);
 
         color = Light.GetComponent<Light>().color;
     }
@@ -68,7 +64,7 @@ public class ManageSky : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(PlayerData.Instance.nTime>=110 && bUseSky2==false)
+        if(PlayerData.Instance.nTime>=180 && bUseSky2==false)
         {
             RenderSettings.skybox = skybox2;
             if(Light.transform.localRotation.x<=0.7f)
@@ -82,7 +78,7 @@ public class ManageSky : MonoBehaviour
         }
 
 
-        if (PlayerData.Instance.nTime >= 230 && bUseSky3 == false)
+        if (PlayerData.Instance.nTime >= 720 && bUseSky3 == false)
         {
             RenderSettings.skybox = skybox3;
             if (color.r>=0.0f)
@@ -106,7 +102,7 @@ public class ManageSky : MonoBehaviour
         //}
 
 
-        if (PlayerData.Instance.nTime >= 245 && bUseLight == false)
+        if (PlayerData.Instance.nTime >= 730 && bUseLight == false)
         {
             //‚Ï‚í‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ ‚ 
             PointLight0.SetActive(true);
@@ -124,8 +120,6 @@ public class ManageSky : MonoBehaviour
             PointLight12.SetActive(true);
             PointLight13.SetActive(true);
             PointLight14.SetActive(true);
-            PointLight15.SetActive(true);
-            PointLight16.SetActive(true);
 
             bUseLight = true;
         }

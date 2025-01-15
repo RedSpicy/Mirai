@@ -41,6 +41,8 @@ public class ManageGUI : MonoBehaviour
     private EffectManager shatihokoEffect3Manager;        // しゃちほこ設置時のエフェクト3
     private EffectManager shatihokoEffect4Manager;        // しゃちほこ設置時のエフェクト4
 
+    PlayerData playerData;
+    GameObject ManageData;
 
     // Start is called before the first frame update
     void Start()
@@ -55,6 +57,9 @@ public class ManageGUI : MonoBehaviour
         shatihokoEffect4Manager = FindObjectOfType<EffectManager>();
         //
         PeekUI.SetActive(false);
+
+        ManageData = GameObject.Find("ManageData");
+        playerData = ManageData.GetComponent<PlayerData>();
     }
 
     // Update is called once per frame
@@ -128,6 +133,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv1");
+
+                            // Lv1看板購入
+                            playerData.AddMoney(-100);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -145,6 +153,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv1");
+
+                            // Lv1看板購入
+                            playerData.AddMoney(-100);
                         }
 
                     }
@@ -165,6 +176,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv2");
+
+                            // Lv2看板購入
+                            playerData.AddMoney(-300);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -182,6 +196,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv2");
+
+                            // Lv2看板購入
+                            playerData.AddMoney(-300);
                         }
 
                     }
@@ -202,6 +219,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv3");
+
+                            // Lv3看板購入
+                            playerData.AddMoney(-1000);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -219,6 +239,9 @@ public class ManageGUI : MonoBehaviour
                             // 川添追加
                             GameObject effect = signBoardEffectManager.SpawnEstablishEffect(currentPosition);
                             SoundManager.Instance.PlaySound("InstallationLv3");
+
+                            // Lv3看板購入
+                            playerData.AddMoney(-1000);
                         }
 
                     }
@@ -272,6 +295,9 @@ public class ManageGUI : MonoBehaviour
                                 new Vector3(currentPosition.x - 2.0f, currentPosition.y + 18.0f, currentPosition.z));
 
                             SoundManager.Instance.PlaySound("Shatihoko");
+
+                            // しゃちほこ購入
+                            playerData.AddMoney(-1000);
                         }
 
                         //設置が可能な状態で [右] クリックを押した
@@ -323,6 +349,9 @@ public class ManageGUI : MonoBehaviour
 
 
                             SoundManager.Instance.PlaySound("Shatihoko");
+
+                            // しゃちほこ購入
+                            playerData.AddMoney(-1000);
                         }
 
                     }

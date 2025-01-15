@@ -71,21 +71,25 @@ public class EnemyShop : MonoBehaviour
                         {
                             state = EnemyStorState.BrainwashingSkill;
                             SkillLogSc.CreateSkillLog(SkillLogManager.StoreName.rival1, SkillLogManager.SkillType.rivalSpecial1);
+                            SoundManager.Instance.PlaySound("RivalSpecial");    // 川添　サウンド追加した
                         }
                         else if (num >= 50 && num < 70)
                         {
                             state = EnemyStorState.SpeedDownSkill;
                             SkillLogSc.CreateSkillLog(SkillLogManager.StoreName.rival1, SkillLogManager.SkillType.rivalSpecial2);
+                            SoundManager.Instance.PlaySound("RivalSpecial");     // 川添　サウンド追加した
                         }
                         else if (num >= 70 && num < 80)
                         {
                             state = EnemyStorState.SubtractionMoneySkill;
                             SkillLogSc.CreateSkillLog(SkillLogManager.StoreName.rival1, SkillLogManager.SkillType.rivalSpecial3);
+                            SoundManager.Instance.PlaySound("RivalSpecial");     // 川添　サウンド追加した
                         }
                         else if (num >= 80 && num < 100)
                         {
                             state = EnemyStorState.speedUpSkill;
                             SkillLogSc.CreateSkillLog(SkillLogManager.StoreName.rival1, SkillLogManager.SkillType.rivalSpecial4);
+                            SoundManager.Instance.PlaySound("RivalSpecial");     // 川添　サウンド追加した
                         }
                     }
                     break;

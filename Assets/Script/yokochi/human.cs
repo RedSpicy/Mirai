@@ -266,12 +266,28 @@ public class human : MonoBehaviour
                 SoundManager.Instance.PlaySound("Attack");     // 川添　サウンド追加した
             }
 
+            // 目的の食べ物のお店に当たったら
             if (other.gameObject.tag == "Store" && bCanStore == true)
             { // 店に当たったら
                 state = (int)human_state.eat;       // 食事状態に遷移
                 Destroy(child);
                 script.AddMoney(addMoneyVal);       // お金加算
 
+                // 川添いじった
+                //script.AddScore(150);               // スコア加算
+            }
+            // 目的でないお店へ案内されたら
+            //else
+            //{
+                // 1/2分のお金、スコア加算とする
+            //}
+
+            if (other.gameObject.tag == "Store" && bCanStore == true)
+            { // 店に当たったら
+                state = (int)human_state.eat;       // 食事状態に遷移
+                Destroy(child);
+                script.AddMoney(addMoneyVal);       // お金加算
+                script.AddScore(addMoneyVal);       // スコア加算
                 // 川添いじった
                 //script.AddScore(150);               // スコア加算
             }
